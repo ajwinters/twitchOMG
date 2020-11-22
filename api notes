@@ -1,0 +1,12 @@
+curl --location --request GET "https://api.twitch.tv/helix/search/channels?query=a_seagull" --header "client-id: pehq8apiw6b1wlbzna2y5dfzyzj5jb" --header "Authorization: Bearer xn8521iz7ubdyfydn8u5dwxbcpknhe"
+
+## https://twitchtokengenerator.com/?code=y5stz77ehiw07102tbk06dz0u3lmk6&scope=user_read+chat_login&state=frontend%7CR1BVWHowNXJReXdYbHlzSDUvcEV3QT09 
+## going to the website above and generating keys from here works, but for whatever reason, the keys generated for my 'Joil_App' on the twitch developers site does not work. Seems like something is up with the OAuth Redirect URL I have listed
+
+access token: 4tygujfmtusltlyb7khm6m1l4qh6vb
+refresh: sq5aftmtty1t2jczygamqsg82iwfaolpothywidd3nw1n0iepu
+client id: gp762nuuoqcoxypju8c569th9wz7q5
+
+## need to get client OAuth flow creditentials, looks something like below, but below doesn't work, found in a YT video
+curl -X POST https://id.twitch.tv/oauth2/authorize?client_id=pehq8apiw6b1wlbzna2y5dfzyzj5jb&redirect_uri=http://localhost&response_type=token&scope=viewing_activity_read
+
